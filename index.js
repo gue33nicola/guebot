@@ -43,7 +43,7 @@ bot.on('message', function(message){
 });
 
 bot.on('message', function(message){
-    if(message.content == 'Cosa ti piace ivan?')
+    if(message.content == 'Cosa ti piace di ivan?')
     {
         message.channel.sendMessage('Sua madre');
     }
