@@ -13,22 +13,6 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 global.servers = {};
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 bot.on("guildMemberAdd", function(member)
 {
     member.send("Benvenuto nel server");
@@ -52,11 +36,19 @@ bot.on('message', function(message){
 });
 
 bot.on('message', function(message){
-    if(message.content == 'Cosa stai facendo ?')
+    if(message.content == 'Cosa stai facendo?')
     {
         message.channel.sendMessage('Mi sto trombando tua madre');
     }
 });
+
+bot.on('message', function(message){
+    if(message.content == 'Cosa ti piace ivan?')
+    {
+        message.channel.sendMessage('Sua madre');
+    }
+});
+
 
 
 //READY
